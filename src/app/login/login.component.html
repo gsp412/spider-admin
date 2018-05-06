@@ -1,0 +1,67 @@
+<div class="bg-main">
+    <div class="regist-container">
+        <div class="regist-animation">
+            <div class="content-regist clearfix">
+                <p><a href="https://www.talkingdata.com?languagetype=zh_cn"><img src="images/logo-regist.png?version=2018050621"></a></p>
+                <div id="basic_login">
+                    <div class="login-title clearfix">
+                        <h3 id="nav-normal-login" class="active" onclick="alterLoginTab(this)">帐号登录</h3>
+                        <h3 id="nav-sms-login" onclick="alterLoginTab(this)" class="">短信登录</h3>
+                    </div>
+                    <!-- 帐户登录 -->
+                    <ul id="tab-normal-login" class="clearfix" style="display: inline-block;">
+                        <li>
+                            <input id="email" name="email" type="text" class="input-regist" placeholder="输入注册邮箱或注册手机" onblur="checkInput(this)">
+                            <font class="email-tip"></font>
+                        </li>
+                        <li>
+                            <input id="password" name="password" type="password" class="input-regist" placeholder="6~32位密码" onblur="checkInput(this)">
+                            <font></font>
+                        </li>
+                    </ul>
+                    <!-- 短信登录 -->
+                    <ul id="tab-sms-login" class="sms-login clearfix" style="display: none;">
+                        <li>
+                            <label>+86 <b></b></label>
+                            <input id="registerMobilePhone" name="Tel" class="input-regist tel" onblur="checkInput(this)">
+                            <font></font>
+                        </li>
+                        <li>
+                            <input id="vCode" name="SecurityCode" class="input-regist" placeholder="请输入验证码">
+                            <em id="sendVCodeButton" onclick="sendVerificationCode('sendVCodeButton','registerMobilePhone','vCodeVerifyHint')" data-origtxt="获取验证码" data-interval="">获取验证码</em>
+                            <font id="vCodeVerifyHint"></font>
+                        </li>
+                    </ul>
+                    <div class="login-operate">
+                        <ul>
+                            <li id="graph_verify_area" style="display: none">
+                                <input type="text" id="graphVCode" class="input-regist  QR-code" value="" placeholder="验证码..." onblur="checkInput(this)">
+                                <font></font>
+                                <div class="QR-code-container" id="graph_verify_container">
+                                    <canvas id="verifyCanvas" width="116" height="44" style="cursor: pointer;">您的浏览器版本不支持canvas</canvas>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="remember clearfix">
+                            <span>
+                    <div class="ga-checkbox">
+                    <input id="remember_me" type="checkbox" class="ng-pristine ng-valid" checked=""><b></b>
+                    </div>
+                    七日内免登录
+                    </span>
+                            <strong>
+                    <a href="javascript:void(0)" onclick="forgetPassword()">忘记密码?</a>
+                    <!-- <br />
+                    <a href="javascript:void(0)" onclick="notReceivedEmail()">没有收到邮箱认证邮件?</a> -->
+                    </strong>
+                        </div>
+                        <a href="javascript:void(0)" id="btn-normal-login" class="btn-login btn-regist" onclick="login()" style="display: block;">帐号登录</a>
+                        <a href="javascript:void(0)" id="btn-sms-login" class="btn-login btn-regist" onclick="smslogin()" style="display: none;">短信登录</a>
+                    </div>
+                </div>
+                <div class="to-regist from-login">还没有账户?<a href="javascript:void(0);" onclick="registFromLogin()" id="registFromLogin">立即注册</a></div>
+            </div>
+            <!-- 以下代码已经弃用，被前页覆盖 -->
+        </div>
+    </div>
+</div>

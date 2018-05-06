@@ -1,0 +1,367 @@
+.header {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #2b83f9;
+    background-image: linear-gradient(143deg,#2945cb 20%,#2b83f9 81%,#3a9dff);
+
+	.header-aside-small {
+		display: none;
+		margin-right: 12px
+	}
+
+	.header-aside-small .td-appfont {
+		font-size: 22px;
+		top: 0;
+		display: inline-block;
+		vertical-align: middle
+	}
+
+	.header-aside-small .header-aside-lang {
+		color: #657180;
+		border-color: #657180
+	}
+
+	.header-aside-small .header-aside-main {
+		display: inline-block;
+		height: 44px;
+		line-height: 44px;
+		margin: auto 8px
+	}
+
+	.header-aside-small .header-aside-setting {
+		margin: auto 0;
+		cursor: pointer
+	}
+
+	.header-aside-small .header-aside-lang {
+		margin-left: 0;
+		line-height: 16px;
+		vertical-align: middle
+	}
+
+	.header-aside-small .grant-item,.header-aside-small .grant-wrap {
+		top: 0
+	}
+
+	.header-aside-small .o-dropdown-item {
+		width: 100%
+	}
+
+	.header-aside-small .ivu-dropdown-item {
+		padding: 7px 0
+	}
+
+	.header-aside-small .ivu-dropdown-item em {
+		display: inline-block;
+		font-size: 14px;
+		font-style: normal;
+		vertical-align: middle;
+		padding-left: 6px;
+		line-height: 25px
+	}
+
+	.header-aside-small .ivu-badge {
+		margin: auto 0
+	}
+}
+.header-logo {
+    width: 200px;
+    height: 100%;
+    float: left;
+    position: relative;
+
+	img {
+		width: 32px;
+		height: 32px;
+		position: relative;
+		top: 20px;
+		margin-left: 20px;
+		float: left
+	}
+
+	& > .header-logo-line {
+		margin-left: 0
+	}
+
+	.header-logo-title {
+		margin-left: 82px;
+		position: relative;
+		top: 16px
+	}
+
+	h3, h4 {
+		color: #fff
+	}
+
+	 h4 {
+		font-weight: 400
+	}
+
+	&:hover {
+		cursor: pointer
+	}
+}
+
+
+.header-items {
+	position: absolute;
+	left: 220px;
+	top: 0;
+
+	a {
+		display: inline-block;
+		margin-right: 40px;
+		position: relative;
+		height: 72px;
+		line-height: 72px;
+		font-size: 14px;
+		color: #fff;
+		opacity: .69;
+		cursor: pointer;
+		transition: all .2s ease-in-out
+	}
+
+	a.on, a:hover {
+		color: #fff;
+		opacity: 1
+	}
+
+	a.on:after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: #4fe3c1;
+		position: absolute;
+		bottom: 0;
+		left: 0
+	}
+
+	a .category-icon {
+		display: inline-block;
+		font-size: 18px;
+		margin-right: 4px;
+		vertical-align: middle
+	}
+
+	a span {
+		vertical-align: middle
+	}
+
+	a img {
+		width: 16px;
+		height: 16px;
+		position: relative;
+		top: 2px;
+		margin-right: 4px
+	}
+}
+.header-aside {
+	float: right;
+	margin: 0 30px 0 0;
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+	height: 72px;
+	line-height: 72px;
+
+
+	.td-appfont {
+		font-size: 18px;
+		color: #fff
+	}
+
+	
+	.no-badgeStyle{
+		display: inline-block;
+	}
+	.ivu-badge {
+		margin: auto 16px;
+		cursor: pointer;
+		position: relative
+	}
+
+	.ivu-badge:hover {
+		opacity: .8
+	}
+
+	.ivu-badge sup {
+		line-height: 12px;
+		border-radius: 50%;
+		padding: 0;
+		top: -6px;
+		right: -6px;
+		position: absolute;
+		background: #2dd1ac
+	}
+
+	&-main {
+		line-height: 72px
+	}
+
+	a,a:hover {
+		color: #fff
+	}
+
+	a:hover {
+		opacity: .8
+	}
+
+	&-setting {
+		margin: auto 8px;
+		position: relative;
+		top: 4px;
+		cursor: pointer
+	}
+
+	.active:after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid #fff;
+		position: absolute;
+		bottom: -28px;
+		left: -4px
+	}
+
+	&-main {
+		margin: auto 16px;
+		position: relative;
+		top: 4px
+	}
+
+
+	&-lang {
+		display: inline-block;
+		height: 23px;
+		width: 23px;
+		line-height: 20px;
+		margin-left: 16px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		padding: 2px;
+		font-size: 12px
+	}
+
+	.split {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 72px;
+		background-color: hsla(0,0%,100%,.14);
+		position: absolute;
+		top: -28px;
+		left: -33px
+	}
+
+	.r {
+		float: right
+	}
+}
+
+
+.header-nav-wrap {
+	display: none;
+	vertical-align: middle;
+	margin-right: 25px
+}
+
+.header-nav-wrap .header-items-line {
+	float: left;
+	padding-top: 8px;
+	width: 2px;
+	height: 30px
+}
+
+.header-nav {
+	float: left;
+	width: 44px;
+	font-size: 28px;
+	color: #fff;
+	line-height: 39px;
+	height: 39px;
+	text-align: center;
+	padding: 0 0 0 4px
+}
+
+.header-nav .ivu-icon {
+	color: #fff
+}
+
+
+@media (max-width:1023px) {
+	.header-items a {
+		margin-right: 0;
+		padding: 0 16px
+	}
+
+	.header-aside-main span,.header-items a span {
+		display: none
+	}
+}
+
+@media (max-width:769px) {
+	.header {
+		height: 84px
+	}
+
+	.header-logo {
+		width: 150px;
+		height: 44px
+	}
+
+	.header-logo img {
+		width: 22px;
+		height: 22px;
+		top: 13px;
+		margin-left: 12px
+	}
+
+	.header-logo-title {
+		margin-left: 54px;
+		top: 10px
+	}
+
+	.header-logo-title h3 {
+		font-size: 13px
+	}
+
+	.header-logo-title h4 {
+		font-size: 8px
+	}
+
+	.header .header-aside {
+		display: none
+	}
+
+	.header .header-aside-small {
+		display: block
+	}
+
+	.header-nav-wrap {
+		display: inline-block
+	}
+
+	.header-items {
+		width: 100%;
+		top: 44px;
+		left: 0;
+		border-top: 1px solid hsla(0,0%,100%,.2)
+	}
+
+	.header-items a {
+		height: 39px;
+		line-height: 39px
+	}
+
+	.header-items a.on:after {
+		height: 2px
+	}
+}

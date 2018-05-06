@@ -27,9 +27,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/scss/font-awesome.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/echarts/dist/echarts.min.js"
+            ]
           },
           "configurations": {
             "production": {

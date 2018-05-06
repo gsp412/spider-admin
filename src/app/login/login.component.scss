@@ -1,0 +1,194 @@
+.bg-main {
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-linear-gradient(left top, #47518b , #343a66);
+    background: -o-linear-gradient(bottom right, #47518b, #343a66);
+    background: -moz-linear-gradient(bottom right, #47518b, #343a66);
+    background: linear-gradient(to bottom right, #47518b , #343a66);
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.regist-container {
+    width: 440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.regist-animation {
+    width: 200%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.content-regist {
+    width: 440px;
+    padding: 60px;
+    display: block;
+    background: #fff;
+    float: left;
+    outline: none;
+}
+.content-regist p img {
+    width: 130px;
+    height: 32px;
+}
+.login-title {
+    border-bottom: 1px solid #edeeef;
+    display: flex;
+    padding-top: 24px;
+    margin-bottom: 6px;
+}
+.content-regist h3 {
+    font-size: 16px;
+    color: rgba(29,36,54,.8);
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.content-regist h3.active {
+    font-weight: bold;
+    border-bottom: 2px solid #1d2436;
+    color: rgba(29,36,54,1);
+}
+.content-regist ol, .content-regist ul {
+    margin: 0;
+    width: 100%;
+    list-style: none;
+}
+.content-regist ul > li {
+    list-style: none;
+    clear: both;
+    padding-top: 16px;
+    position: relative;
+    display: block;
+}
+.content-regist ul li .input-regist, .content-regist ul li .choose-function {
+    background: none;
+    border: 1px solid #dbdcdf;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 14px;
+    width: 100%;
+}
+.content-regist ul li font, .content-regist ul li span {
+    display: block;
+    color: #db4e2b;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.content-regist ul li label {
+    position: absolute;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 16px;
+    color: #1d2436;
+}
+.content-regist .sms-login li .input-regist {
+    width: 220px;
+    border-radius: 4px 0 0 4px;
+}
+.content-regist ul li .input-regist:focus {
+    border-color: #2d8cf0;
+    box-shadow: 0 0 6px rgba(45,140,240,0.4), 0 0 6px rgba(45,140,240,0.4) inset;
+    color:#1d2436;
+}
+.content-regist ul li .input-regist.tel {
+    padding-left: 65px;
+}
+.content-regist.verify-container ul li .input-regist.tel, .content-regist .sms-login li .input-regist.tel {
+    width: 100%;
+    border-radius: 4px;
+}
+.content-regist ul > li em {
+    position: absolute;
+    font-style: normal;
+    height: 44px;
+    line-height: 44px;
+    width: 100px;
+    right: 0;
+    top: 16px;
+    background: #fff;
+    border: 1px solid #dbdcdf;
+    border-left: 1px solid transparent;
+    text-align: center;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 12px;
+}
+.remember {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    color: #5368a2;
+    padding-top: 6px;
+}
+.remember strong {
+    float: right;
+    font-weight: 400;
+    text-align: right;
+    color: #5368a2;
+    font-size: 12px;
+}
+.remember span {
+    display: block;
+    float: left;
+    width: 120px;
+    color: #5368a2;
+    font-size: 12px;
+}
+.remember a {
+    color: #2d8cf0;
+    text-decoration: none;
+    line-height: 20px;
+}
+a.btn-login {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: #2d8cf0;
+    height: 44px;
+    line-height: 44px;
+    width: 140px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.to-regist {
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    font-weight: normal;
+}
+.to-regist.from-login {
+    float: left;
+    padding-top: 12px;
+}
+.to-regist a {
+    color: #2d8cf0;
+    text-decoration: none;
+}
+.ga-checkbox{
+	display: inline-block;
+}

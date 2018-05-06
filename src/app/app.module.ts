@@ -1,20 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormBuilder } from '@angular/forms'
+import {RouterModule} from '@angular/router';
+
+/* 第三方插件 */
+import { ElModule } from 'element-angular';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { EchartsComponent } from './echarts/echarts.component';
+import { FormComponent } from './form/form.component';
+import { LoginComponent } from './login/login.component';
+
+import {appRoutes} from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes),
+    ElModule.forRoot(),
+    // NgxEchartsModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
