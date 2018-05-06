@@ -7,6 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {PageNotFoundComponent} from '../not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { SitebarComponent } from './sitebar/sitebar.component';
+import { FormComponent } from './form/form.component';
+import { ListComponent } from './list/list.component';
 
 import { ElModule } from 'element-angular';
 

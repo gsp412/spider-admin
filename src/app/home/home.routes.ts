@@ -8,7 +8,7 @@ export const homeRoutes = [
     component: HomeComponent,
     children: [
       {
-        path: '', redirectTo: 'dashboard', pathMatch: 'full'
+        path: '', redirectTo: '/dashboard', pathMatch: 'full'
       },
       {
         path: 'list',
