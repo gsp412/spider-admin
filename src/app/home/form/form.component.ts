@@ -88,21 +88,21 @@ export class FormComponent implements OnInit {
 	  })
 	}
 
-	private timeValidator = (control: FormControl): validateResult => {
+	private timeValidator = (control: FormControl) => {
 	  if (!control.value) {
 	    return { status: 'error', message: '必须选择配送时间' }
 	  }
 	  return { status: 'success' }
 	}
 
-	private dateValidator = (control: FormControl): validateResult => {
+	private dateValidator = (control: FormControl) => {
 	  if (!control.value) {
 	    return { status: 'error', message: '必须选择配送日期' }
 	  }
 	  return { status: 'success' }
 	}
 
-	private cityValidator = (control: FormControl): validateResult => {
+	private cityValidator = (control: FormControl) => {
 	  if (!control.value) {
 	    return { status: 'error', message: '必须填写城市名' }
 	  }

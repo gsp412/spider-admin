@@ -1,6 +1,7 @@
 import { HomeComponent } from './home.component';
 import { PageNotFoundComponent } from '../not-found.component';
-import { DashboardComponent } from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormComponent } from './form/form.component';
 
 export const homeRoutes = [
   {
@@ -8,7 +9,7 @@ export const homeRoutes = [
     component: HomeComponent,
     children: [
       {
-        path: '', redirectTo: '/dashboard', pathMatch: 'full'
+        path: '', redirectTo: '/home/dashboard', pathMatch: 'full'
       },
       {
         path: 'list',
@@ -19,6 +20,10 @@ export const homeRoutes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'form',
+        component: FormComponent
       },
       {
         path: '**',

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {RouterModule} from '@angular/router';
 import { CommonModule } from '@angular/common';
+
 import {homeRoutes} from './home.routes';
 import { HomeComponent } from './home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -9,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { SitebarComponent } from './sitebar/sitebar.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
+import { EchartsComponent } from './echarts/echarts.component';
 
 import { ElModule } from 'element-angular';
 
@@ -23,7 +25,8 @@ import { ElModule } from 'element-angular';
 	  DashboardComponent,
 	  PageNotFoundComponent,
 	  HeaderComponent,
-	  SitebarComponent
+	  SitebarComponent,
+    FormComponent
   ]
 })
 export class HomeModule { }
