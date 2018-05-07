@@ -4,6 +4,7 @@ body {
 	line-height: 1.5;
 	color: #495060;
 	background-color: #fff;
+	overflow-y: scroll;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
 }
@@ -114,4 +115,7 @@ body, html {
 		padding: 20px 0;
 	}
 	
+}
+.el-submenu .el-menu-item{
+	padding-left: 45px!important;
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import {homeRoutes} from './home.routes';
 import { HomeComponent } from './home.component';
@@ -18,6 +19,7 @@ import { ElModule } from 'element-angular';
   imports: [
     CommonModule,
     ElModule,
+    ReactiveFormsModule,
     RouterModule.forChild(homeRoutes)
   ],
   declarations: [
