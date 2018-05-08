@@ -13,17 +13,18 @@
 ## 环境
 
 | 包 | 版本 |
+| ------- | ------- |
 | @angular | ^6.0.0 |
 | element-angular | ^0.7.5 |
 
 ## 应用截图
 img(/tuchongyang/angular-admin/blob/master/src/assets/images/screen-1.jpg?raw=true)
 
-## Build
+## 构建
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+运行 `ng build` 构建项目. 生成的文件位于 `dist/` 目录. 在生产环境中请使用 `--prod` 标记.
 
-## Running unit tests
+## 运行测试单元
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
