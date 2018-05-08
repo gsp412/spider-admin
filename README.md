@@ -17,6 +17,7 @@
 | element-angular | ^0.7.5 |
 
 ## 应用截图
+img(/tuchongyang/angular-admin/blob/master/src/assets/images/screen-1.jpg?raw=true)
 
 ## Build
 
