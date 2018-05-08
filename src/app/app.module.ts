@@ -9,7 +9,6 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 /* 第三方插件 */
 import { ElModule } from 'element-angular';
-import { NgxEchartsModule } from 'ngx-echarts';
 // import { NgProgressModule } from '@ngx-progressbar/core';
 
 /* 组件 */ 
@@ -32,8 +31,7 @@ import { JWTInterceptor } from './common/auth.interceptor';
     HttpClientModule,
     // NgProgressModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    ElModule.forRoot(),
-    // NgxEchartsModule
+    ElModule.forRoot()
   ],
   providers: [
     FormBuilder,
