@@ -1,14 +1,22 @@
-# AngularAdmin
+# 基于angular-element的后台管理模版
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+这个项目构建与 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
-## Development server
+## 快速入门
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> git clone 
+> npm install git@github.com:tuchongyang/angular-admin.git
+> cd angular-admin
+> npm install
+> npm start
 
-## Code scaffolding
+## 环境
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| 包 | 版本 |
+| @angular | ^6.0.0 |
+| element-angular | ^0.7.5 |
+
+## 应用截图
 
 ## Build
 
