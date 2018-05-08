@@ -18,7 +18,7 @@
 | element-angular | ^0.7.5 |
 
 ## 应用截图
-![angular-admin](./assets/images/screen-1.jpg?raw=true)
+![angular-admin](./src/assets/images/screen-1.jpg)
 
 ## 构建
 
