@@ -3,15 +3,13 @@
 这个项目构建与 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## 快速入门
-
-> git clone npm install git@github.com:tuchongyang/angular-admin.git
+```bash
+ git clone npm install git@github.com:tuchongyang/angular-admin.git
 
  cd angular-admin
- 
  npm install
- 
  npm start
-
+```
 ## 环境
 
 | 包 | 版本 |
