@@ -19,11 +19,13 @@ export const homeRoutes = [
       },
       {
         path: 'dashboard',
-        component: DashboardComponent
+        component: DashboardComponent,
+        data: {state:'dashboard'}
       },
       {
         path: 'form',
-        component: FormComponent
+        component: FormComponent,
+        data: {state:'form'}
       },
       {
         path: '**',
