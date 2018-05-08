@@ -4,10 +4,12 @@
 
 ## 快速入门
 
-> git clone 
- npm install git@github.com:tuchongyang/angular-admin.git
+> git clone npm install git@github.com:tuchongyang/angular-admin.git
+
  cd angular-admin
+ 
  npm install
+ 
  npm start
 
 ## 环境
