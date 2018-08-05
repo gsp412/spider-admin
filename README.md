@@ -1,10 +1,10 @@
 # 基于angular-element的后台管理模版
 
-这个项目构建与 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+这个项目构建于 [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ## 快速入门
 ```bash
- git clone npm install git@github.com:tuchongyang/angular-admin.git
+ git clone git@github.com:tuchongyang/angular-admin.git
 
  cd angular-admin
  npm install
