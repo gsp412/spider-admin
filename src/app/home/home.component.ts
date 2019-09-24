@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MyService } from '../services/index';
 import { routerTransition } from '../common/config';
 
 @Component({
@@ -10,22 +9,13 @@ import { routerTransition } from '../common/config';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private myService: MyService) { }
-  
+  constructor() { }
+
    getState(outlet) {
     return outlet.activatedRouteData.state;
   }
 
   ngOnInit() {
-  	this.myService.getposter()
-  	.subscribe({
-      next(resp){
-    		console.log(resp);
-      },
-      error(err){
-        console.log(err);
-      }
-  	})
   }
 
 }

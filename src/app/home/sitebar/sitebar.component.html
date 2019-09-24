@@ -1,16 +1,6 @@
 <div class="sitebar">
-	<el-menu model="2">
-	    <el-submenu index="1">
-	        <ng-template #title>
-	            <i class="el-icon-message"></i>数据概览
-	        </ng-template>
-	        
-            <el-menu-item index="1-1" to="/home/dashboard">数据概览</el-menu-item>
-            <el-menu-item index="1-2" to="/home/list">列表</el-menu-item>
-            <el-menu-item index="1-3" to="/home/form">表单</el-menu-item>
-            <el-menu-item index="1-4">选项4</el-menu-item>
-	    </el-submenu>
-	    <el-menu-item index="2"><i class="el-icon-menu"></i>导航二</el-menu-item>
-	    <el-menu-item index="3"><i class="el-icon-setting"></i>导航三</el-menu-item>
+	<el-menu model="1">
+	    <el-menu-item to="/home/star-add" index="1"><i class="el-icon-message"></i>新增明星</el-menu-item>
+	    <!-- <el-menu-item index="2"><i class="el-icon-menu"></i>补全明星</el-menu-item> -->
 	</el-menu>
 </div>

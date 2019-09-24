@@ -1,7 +1,6 @@
 import { HomeComponent } from './home.component';
 import { PageNotFoundComponent } from '../not-found.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { FormComponent } from './form/form.component';
+import { StarAddComponent } from 'src/app/home/star-add/star-add.component';
 
 export const homeRoutes = [
   {
@@ -9,23 +8,12 @@ export const homeRoutes = [
     component: HomeComponent,
     children: [
       {
-        path: '', redirectTo: '/home/dashboard', pathMatch: 'full'
+        path: '', redirectTo: '/home/star-add', pathMatch: 'full'
       },
       {
-        path: 'list',
-        loadChildren: './list/list.module#ListModule',
-        title1: '数据管理',
-        title2: '基础表格'
-      },
-      {
-        path: 'dashboard',
-        component: DashboardComponent,
-        data: {state:'dashboard'}
-      },
-      {
-        path: 'form',
-        component: FormComponent,
-        data: {state:'form'}
+        path: 'star-add',
+        component: StarAddComponent,
+        data: {state: 'star-add'}
       },
       {
         path: '**',

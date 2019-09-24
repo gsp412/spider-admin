@@ -1,29 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormBuilder } from '@angular/forms'
+import { FormBuilder, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-
 
 /* 第三方插件 */
 import { ElModule } from 'element-angular';
 // import { NgProgressModule } from '@ngx-progressbar/core';
 
-/* 组件 */ 
+/* 组件 */
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
 import { appRoutes } from './app.routes';
-import { MyService } from './services/index';
-import { UserService } from './services/user.service';
-import { JWTInterceptor } from './common/auth.interceptor';
+
+/* service */
+import { HttpsInterceptorService } from './services/https-interface/https-interceptor.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,17 +30,12 @@ import { JWTInterceptor } from './common/auth.interceptor';
     HttpClientModule,
     // NgProgressModule.forRoot(),
     RouterModule.forRoot(appRoutes),
-    ElModule.forRoot()
+    ElModule.forRoot(),
+    FormsModule
   ],
   providers: [
     FormBuilder,
-    MyService,
-    UserService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: JWTInterceptor,
-      multi: true
-    }
+    { provide: HTTP_INTERCEPTORS, useClass: HttpsInterceptorService, multi: true },
   ],
   bootstrap: [AppComponent]
 })

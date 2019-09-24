@@ -1,0 +1,70 @@
+.header-status {
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.body-content {
+    width: 100%;
+    padding: 2rem 0rem;
+    .star-body {
+        margin: 0rem 1rem .8rem 1rem;
+        img {
+            width: 100%;
+        }
+    }
+    .star-info {
+        padding: 1rem;
+        dt {
+            float: left;
+            width: 20%;
+            color: #999999;
+            height: 1.5rem;
+            line-height: 1.5rem;
+        }
+        dd {
+            float: left;
+            width: 30%;
+            color: #000000;
+            height: 1.5rem;
+            line-height: 1.5rem;
+        }
+        el-tooltip{
+            p {
+                width: 15rem;
+            }
+            span {
+                float: left;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .bottom {
+            margin-top: .8rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 2.5rem;
+            el-tag {
+                flex: 0 1 60%;
+            }
+            el-button {
+                flex: 0 1 20%;
+            }
+        }
+    }
+}
+
+.foot-content {
+    padding: 1rem 0;
+    width: 100%;
+    height: 4rem;
+}
+
+.add-bottom {
+    margin-bottom: 2rem;
+}

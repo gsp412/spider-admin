@@ -1,0 +1,12 @@
+{
+    "/util/code/": {
+      "target": "http://10.112.40.114",
+      "secure": false,
+      "changeOrigin": true
+    },
+    "/v1/*": {
+        "target": "http://127.0.0.1:8995",
+        "secure": false,
+        "changeOrigin": true  
+    }
+}

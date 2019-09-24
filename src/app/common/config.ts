@@ -1,9 +1,9 @@
-import {trigger,query,group, state, style, transition, animate, keyframes} from '@angular/animations';
+import {trigger, query, group, state, style, transition, animate, keyframes} from '@angular/animations';
 
 /***********************接口地址前缀*********************/
 export const beforeUrl = '';
 
-//页面跳转动画
+// 页面跳转动画
 export const pageAnimation = trigger('pageAnimation', [
   state('in', style({opacity: 1, transform: 'translateY(0)'})),
   transition('void => *', [
@@ -24,7 +24,7 @@ export const pageAnimation = trigger('pageAnimation', [
 export const routerTransition = trigger('routerTransition', [
   transition('* <=> *', [
     /* order */
-    /* 1 */ query(':enter, :leave', style({ position: 'fixed', width:'100%' })
+    /* 1 */ query(':enter, :leave', style({ position: 'fixed', width: '100%' })
       , { optional: true }),
     /* 2 */ group([  // block executes in parallel
       query(':enter', [
@@ -37,4 +37,4 @@ export const routerTransition = trigger('routerTransition', [
       ], { optional: true }),
     ])
   ])
-])
+]);

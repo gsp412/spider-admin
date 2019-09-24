@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-admin": {
+    "spider-admin": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-admin",
+            "outputPath": "dist/spider-admin",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-admin:build"
+            "browserTarget": "spider-admin:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-admin:build:production"
+              "browserTarget": "spider-admin:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-admin:build"
+            "browserTarget": "spider-admin:build"
           }
         },
         "test": {
@@ -102,7 +102,7 @@
         }
       }
     },
-    "angular-admin-e2e": {
+    "spider-admin-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -110,7 +110,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-admin:serve"
+            "devServerTarget": "spider-admin:serve"
           }
         },
         "lint": {
@@ -125,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "angular-admin"
+  "defaultProject": "spider-admin"
 }
